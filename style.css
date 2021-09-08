@@ -1,0 +1,62 @@
+body {
+    margin-left: 250px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 75px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+.food-stuff {
+    display: flex;
+}
+
+.food-image {
+    display: flex;
+    max-height: 400px;
+    outline: solid;
+    outline-color: rgb(96, 122, 122);
+}
+
+.recipe-directions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    max-width: 600px;
+}
+
+label {
+    margin-left: 5px;
+}
