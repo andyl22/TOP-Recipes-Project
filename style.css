@@ -5,7 +5,7 @@ html {
 
 body {
     margin-left: 50px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 main {
@@ -14,12 +14,12 @@ main {
 
 h1 {
     font-size: 30px;
-    margin-bottom: 75px;
+    margin-left: 10px;
 }
 
 h2 {
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 h3 {
@@ -37,9 +37,17 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 50px;
+    height: 3em;
     min-width: 100%;
     background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px lightcoral, 0 0 1em blue;
 }
 
 .food-stuff {
@@ -48,13 +56,18 @@ footer {
 
 .food-image {
     display: flex;
-    max-height: 400px;
+    max-height: 300px;
+    margin-left: 15px;
     outline: solid;
+    flex-wrap: wrap;
     outline-color: rgb(96, 122, 122);
+    margin-right: 50px;
 }
+
 .heart-of-the-recipe {
     display: flex;
-    margin-bottom: 10%;
+    margin-top: 30px;
+    margin-bottom: 10vh;
     flex-wrap: wrap;
 }
 
@@ -62,7 +75,9 @@ footer {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 50vw;
+    min-width: 30vw;
 }
 
 .recipe-directions {
@@ -70,36 +85,83 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 500px;
+    align-content: flex-start;
+    max-width: 50vw;
 }
 
 #ingredients-header {
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 #main-page-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    position: absolute;
+    margin-top: 20px;
 }
 
 .main-list-items {
-    margin: 30px;
+    margin: 50px 40px 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 .food-main-image {
-    max-width: 200px;
-    margin: 25px 0px 25px 0px;
+    display: flex;
+    max-width: 300px;
+    margin: 15px 0px 15px 0px;
 }
+
+.main-food-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.food-description-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 50vw;
+}
+
+@media only screen and (max-width: 776px)  {
+
+    .main-food-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-image {
+        display: flex;
+        align-self: flex-start;
+        max-height: 300px;
+        margin-left: 15px;
+        outline: solid;
+        outline-color: rgb(96, 122, 122);
+        margin-right: 50px;
+    }
+
+    .food-description-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        max-width: 50vw;
+        margin-left: 15px;
+    }
+
+    .main-list-items {
+        margin: 25px 0px 0px 20px;
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
 
 label {
     margin-left: 5px;
-}
-
-#footer-text {
-    display: flex;
-    margin-left: 25px;
-    justify-content: center;
 }
