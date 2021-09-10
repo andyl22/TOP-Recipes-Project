@@ -1,11 +1,12 @@
+
 html {
     height: 100vh;
     width: 100vw;
 }
 
 body {
-    margin-left: 50px;
-    background-color: white;
+	background-color:rgb(241, 238, 228);
+    margin: auto auto auto 70px;
 }
 
 main {
@@ -15,15 +16,18 @@ main {
 h1 {
     font-size: 30px;
     margin-left: 10px;
+    color:rgb(94, 40, 40);
 }
 
 h2 {
     font-size: 20px;
     margin-left: 15px;
+    color:rgb(94, 40, 40);
 }
 
 h3 {
     font-size: 15px;
+    color:rgb(138, 79, 31);
 }
 
 ul {
@@ -43,11 +47,17 @@ footer {
 }
 
 a {
+    padding-top: 15px;
     text-decoration: none;
+    color: brown;
 }
 
 a:hover {
-    text-shadow: 1px 1px 2px lightcoral, 0 0 1em blue;
+    text-shadow: 1px 1px 2px lightcoral, 0 0 1em rgb(26, 48, 6);
+}
+
+#header-title {
+    margin: 30px 0px -20px 0px;
 }
 
 .food-stuff {
@@ -57,37 +67,23 @@ a:hover {
 .food-image {
     display: flex;
     max-height: 300px;
-    margin-left: 15px;
-    outline: solid;
+    margin: 10px 50px 30px 15px;
+    border: solid;
     flex-wrap: wrap;
     outline-color: rgb(96, 122, 122);
-    margin-right: 50px;
 }
 
 .heart-of-the-recipe {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 10vh;
     flex-wrap: wrap;
 }
 
-.food-ingredients {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 75vw;
-	min-width: 30vw;
-}
 
 .recipe-directions {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    max-width: 75vw;
-	min-width: 300px;
+    max-width: 25vw;
 }
 
 #ingredients-header {
@@ -97,7 +93,7 @@ a:hover {
 #main-page-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    
 }
 
 .main-list-items {
@@ -106,17 +102,19 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    border: 1px solid black;
+    background: white;
 }
 
 .food-main-image {
+    border-top: 1px solid black;
     display: flex;
     max-width: 300px;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 0px 0px;
 }
 
 .main-food-description {
     display: flex;
-    flex-direction: row;
 }
 
 .food-description-container {
@@ -125,54 +123,77 @@ a:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    max-width: 50vw;
+    max-width: 20vw;
 	min-width: 300px;
 }
 
 
-@media only screen and (max-width: 776px)  {
-	
-	body {
-		margin-left: 15px;
-		background-color: white;
-	}
+@media only screen and (max-width: 800px)  {
+
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+
+    h2 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    ul {
+        padding-right: 80px;
+    }
+
+    #header-title {
+        margin: 30px 0px 0px 0px;
+    }
 
     .main-food-description {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
     }
 
     .food-image {
-        display: flex;
-        align-self: flex-start;
-        max-height: 300px;
-        margin-left: 15px;
-        outline: solid;
-        outline-color: rgb(96, 122, 122);
-        margin-right: 50px;
+        align-self: center;
+        margin: 0 auto;
     }
 
     .food-description-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
-        max-width: 50vw;
-        margin-left: 15px;
+        max-width: 75vw;
+        min-width: 0px;
+        margin: 0 auto;
+    }
+    
+    #ingredients-container {
+        width:100%;
     }
 
     .main-list-items {
-        margin: 25px 0px 0px 20px;
-        text-align: left;
-        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto 30px auto;
     }
 	
 	.food-main-image {
-    display: flex;
-    max-width: 300px;
-    margin: 15px 0px 15px 0px;
+        max-width: 400px;
 	}
+
+    .recipe-directions {
+        max-width: 100vw;
+        min-width: 50px;
+    }
+
+    .heart-of-the-recipe {
+        margin: auto;
+    }
+    
 }
 
 
