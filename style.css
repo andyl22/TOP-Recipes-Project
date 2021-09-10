@@ -173,6 +173,7 @@ a:hover {
 
     li {
         margin: 0px 0px 15px 45px;
+        padding-right: 10%;
     }
 
 
@@ -205,8 +206,13 @@ a:hover {
 	}
 
     .recipe-directions {
-        max-width: 85vw;
-        min-width: 100px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #ingredients-container {
+        margin-right: 0px;
+        width: 100%;
     }
 
     .heart-of-the-recipe {
