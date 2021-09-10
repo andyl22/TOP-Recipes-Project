@@ -4,6 +4,10 @@ html {
     width: 100vw;
 }
 
+header {
+    margin: 10px 0px 0px 10px;
+}
+
 body {
 	background-color:rgb(241, 238, 228);
     margin: auto auto auto 70px;
@@ -28,6 +32,7 @@ h2 {
 h3 {
     font-size: 15px;
     color:rgb(138, 79, 31);
+    margin-left: 35px;
 }
 
 ul {
@@ -35,15 +40,11 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
+    margin: 0px;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 3em;
-    min-width: 100%;
-    background-color: lightgrey;
+li {
+    margin-bottom: 15px;
 }
 
 a {
@@ -52,13 +53,25 @@ a {
     color: brown;
 }
 
-a:hover {
-    text-shadow: 1px 1px 2px lightcoral, 0 0 1em rgb(26, 48, 6);
+
+label {
+    margin-left: 5px;
 }
 
-#header-title {
-    margin: 30px 0px -20px 0px;
+.numbered-list {
+    display: flex;
+    list-style-type: decimal;
 }
+
+#return-home {
+    text-decoration:underline;
+    font-size: 12px;
+}
+
+a:hover {
+    text-shadow: 0px 0px 0px black;
+}
+
 
 .food-stuff {
     display: flex;
@@ -84,10 +97,11 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 25vw;
+    padding-bottom: 50px;
 }
 
-#ingredients-header {
-    margin-left: 30px;
+#ingredients-container {
+    margin-right: 100px;
 }
 
 #main-page-list {
@@ -109,7 +123,7 @@ a:hover {
 .food-main-image {
     border-top: 1px solid black;
     display: flex;
-    max-width: 300px;
+    max-height: 300px;
     margin: 15px 0px 0px 0px;
 }
 
@@ -123,12 +137,16 @@ a:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    max-width: 20vw;
+    max-width: 600px;
 	min-width: 300px;
 }
 
 
 @media only screen and (max-width: 800px)  {
+
+    h1 {
+        margin-left: 0px;
+    }
 
     body {
         margin: 0;
@@ -142,16 +160,21 @@ a:hover {
 
     h2 {
         text-align: center;
-        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        margin-left: 70px;
     }
 
     ul {
         padding-right: 80px;
     }
 
-    #header-title {
-        margin: 30px 0px 0px 0px;
+    li {
+        margin: 0px 0px 15px 45px;
     }
+
 
     .main-food-description {
         display: flex;
@@ -162,17 +185,13 @@ a:hover {
 
     .food-image {
         align-self: center;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     .food-description-container {
         max-width: 75vw;
         min-width: 0px;
         margin: 0 auto;
-    }
-    
-    #ingredients-container {
-        width:100%;
     }
 
     .main-list-items {
@@ -186,8 +205,8 @@ a:hover {
 	}
 
     .recipe-directions {
-        max-width: 100vw;
-        min-width: 50px;
+        max-width: 85vw;
+        min-width: 100px;
     }
 
     .heart-of-the-recipe {
@@ -197,6 +216,3 @@ a:hover {
 }
 
 
-label {
-    margin-left: 5px;
-}
